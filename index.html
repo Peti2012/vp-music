@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VP MUSIC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<<header class="topbar">
+
+    <a href="#" class="brand" id="home-logo">
+        <div class="logo">VP <span>MUSIC</span></div>
+    </a>
+
+    <nav>
+        <button class="nav-btn active" data-page="home">Kezdőlap</button>
+        <button class="nav-btn" data-page="lessons">Tananyagok</button>
+        <button class="nav-btn" data-page="piano">Zongora</button>
+        <button class="nav-btn" data-page="theory">Zeneelmélet</button>
+        <button class="nav-btn" data-page="quiz">Kvízek</button>
+        <button class="nav-btn" data-page="extras">Érdekességek</button>
+    </nav>
+
+
+    </nav>
+</header>
+
+<main>
+
+    <!-- KEZDŐLAP -->
+    <section class="page active" id="home">
+        <div class="hero">
+            <span class="tag">🎵 ONLINE ZENEOKTATÁS</span>
+            <h1>Üdvözöl a <span>VP MUSIC!</span></h1>
+            <p>Tanulj zenét egyszerűen, lépésről lépésre!</p>
+            <button class="primary-btn" data-go="lessons">
+                Tanulás elkezdése →
+            </button>
+        </div>
+
+        <h2 class="section-title">Mit szeretnél tanulni?</h2>
+
+        <div class="cards">
+            <div class="card" data-go="lessons">
+                <div class="card-icon">📚</div>
+                <h3>Tananyagok</h3>
+                <p>Hangok, akkordok és skálák.</p>
+            </div>
+
+            <div class="card" data-go="piano">
+                <div class="card-icon">🎹</div>
+                <h3>Virtuális zongora</h3>
+                <p>Próbáld ki a hangokat!</p>
+            </div>
+
+            <div class="card" data-go="quiz">
+                <div class="card-icon">🏆</div>
+                <h3>Tudáspróba</h3>
+                <p>Teszteld a tudásodat!</p>
+            </div>
+
+            <div class="card" data-go="theory">
+                <div class="card-icon">🎼</div>
+                <h3>Zeneelmélet</h3>
+                <p>Ismerd meg a zene alapjait!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TANANYAGOK -->
+<section class="page" id="lessons">
+    <h2 class="section-title">📚 Zenei tananyagok</h2>
+    <p class="subtitle">Tanulj meg mindent a zenéről, az alapoktól!</p>
+
+    <!-- HANGOK -->
+    <div class="content-panel">
+        <h2>🎵 1. A zenei hangok</h2>
+        <p>A zenében különböző magasságú hangokat használunk. A hangok nevei:</p>
+
+        <p><strong>C – D – E – F – G – A – H</strong></p>
+
+        <h3>Mit jelent az oktáv?</h3>
+        <p>Az oktáv egy 8 hangból álló távolság. Ha egy hang után eljutunk ugyanahhoz a hanghoz magasabban, akkor egy oktávot léptünk.</p>
+
+        <p>Pl.: C – D – E – F – G – A – H – C</p>
+
+        <h3>Magas és mély hangok</h3>
+        <ul>
+            <li>A mély hangok lassabb rezgésszámúak.</li>
+            <li>A magas hangok gyorsabb rezgésszámúak.</li>
+            <li>A zongora bal oldalán mélyebb, jobb oldalán magasabb hangokat találunk.</li>
+        </ul>
+
+        <h3>🎯 Gyakorlat</h3>
+        <p>Próbáld meg a virtuális zongorán megkeresni a C, D, E, F és G hangokat!</p>
+    </div>
+
+    <!-- AKKORDOK -->
+    <div class="content-panel">
+        <h2>🎹 2. Az akkordok</h2>
+        <p>Az akkord több hang egyidejű megszólaltatásából jön létre. Az akkordok adják a zene harmóniáját.</p>
+
+        <h3>Dúr akkord</h3>
+        <p>A dúr akkord általában vidámabb, fényesebb hangzású.</p>
+        <p><strong>C-dúr:</strong> C – E – G</p>
+        <p>Ez három hangból áll: alaphang, terc és kvint.</p>
+
+        <h3>Moll akkord</h3>
+        <p>A moll akkord gyakran szomorkásabb, lágyabb hangulatot ad.</p>
+        <p><strong>A-moll:</strong> A – C – E</p>
+
+        <h3>Mi az alaphang?</h3>
+        <p>Az alaphang az akkord kiinduló hangja. Ez adja az akkord nevét.</p>
+
+        <h3>🎯 Gyakorlat</h3>
+        <ul>
+            <li>Keress egy C hangot!</li>
+            <li>Szólaltasd meg vele együtt az E és G hangot!</li>
+            <li>Ezután próbáld ki az A – C – E hangokat!</li>
+        </ul>
+    </div>
+
+    <!-- SKÁLÁK -->
+    <div class="content-panel">
+        <h2>🎼 3. A zenei skálák</h2>
+        <p>A skála egymás után következő hangok sorozata, amelyek meghatározott szabály szerint követik egymást.</p>
+
+        <h3>C-dúr skála</h3>
+        <p><strong>C – D – E – F – G – A – H – C</strong></p>
+        <p>A C-dúr skála nem tartalmaz módosított hangokat (keresztet vagy bé-t).</p>
+
+        <h3>G-dúr skála</h3>
+        <p><strong>G – A – H – C – D – E – F# – G</strong></p>
+        <p>A G-dúr skála egy keresztes hangot tartalmaz: F#.</p>
+
+        <h3>A-moll skála</h3>
+        <p><strong>A – H – C – D – E – F – G – A</strong></p>
+        <p>Az A-moll a C-dúr hangjaiból áll, de A hangról indul.</p>
+
+        <h3>🎯 Gyakorlat</h3>
+        <p>Játsszd le lassan a C-dúr skálát a zongorán! Figyelj arra, hogy minden hang tisztán szóljon.</p>
+    </div>
+
+    <!-- ZENEELMÉLET -->
+    <div class="content-panel">
+        <h2>📖 4. Zeneelméleti alapok</h2>
+
+        <h3>🥁 Ritmus</h3>
+        <p>A ritmus a hangok és a csendek időbeli elrendezése. Ez adja a zene lüktetését.</p>
+
+        <h3>⏱️ Tempó</h3>
+        <p>A tempó azt mutatja, milyen gyorsan játszunk egy zenét.</p>
+        <p>A tempót BPM-ben mérjük (Beats Per Minute), vagyis ütés percenként.</p>
+        <ul>
+            <li>60 BPM – lassú</li>
+            <li>100 BPM – közepes</li>
+            <li>140 BPM – gyors</li>
+        </ul>
+
+        <h3>🎚️ Dinamika</h3>
+        <p>A dinamika a zene hangerejének változását jelenti.</p>
+        <ul>
+            <li><strong>p (piano):</strong> halk</li>
+            <li><strong>f (forte):</strong> hangos</li>
+            <li><strong>pp:</strong> nagyon halk</li>
+            <li><strong>ff:</strong> nagyon hangos</li>
+        </ul>
+
+        <h3>🎶 Harmónia</h3>
+        <p>A harmónia a különböző hangok együttes megszólalásának és egymáshoz való kapcsolatának rendszere.</p>
+
+        <h3>📏 Hangköz</h3>
+        <<p>A hangköz két hang közötti távolság. Például a C és E közötti távolság terc.</p>
+
+        <h3>🎯 Gyakorlat</h3>
+        <<p>Tapssal próbálj meg egyenletes ritmust tartani 60 BPM, majd 100 BPM sebességgel!</p>
+    </div>
+
+    <!-- GYAKORLÁS -->
+    <div class="content-panel">
+        <h2>📝 5. Összefoglaló gyakorlás</h2>
+        <<ul>
+            <li>Nevezd meg a 7 alap zenei hangot!</li>
+            <li>Mi az oktáv?</li>
+            <li>Melyik 3 hang alkotja a C-dúr akkordot?</li>
+            <li>Melyik hang módosul G-dúrban?</li>
+            <li>Mit jelent a BPM?</li>
+            <li>Mi a különbség a dúr és moll akkord között?</li>
+        </ul>
+        <<p><strong>Tipp:</strong> Gyakorolj naponta 10–15 percet, és mindig lassan kezdd a nehezebb részeket!</p>
+    </div>
+</section>
+
+    <!-- ZONGORA -->
+    <section class="page" id="piano">
+        <h2 class="section-title">🎹 Virtuális zongora</h2>
+        <p class="subtitle">Kattints a billentyűkre és hallgasd meg a hangokat!</p>
+
+        <div class="content-panel">
+            <div class="piano">
+                <button class="white-key" data-note="C4">C</button>
+                <button class="black-key" data-note="Cs4">C#</button>
+                <button class="white-key" data-note="D4">D</button>
+                <button class="black-key" data-note="Ds4">D#</button>
+                <button class="white-key" data-note="E4">E</button>
+                <button class="white-key" data-note="F4">F</button>
+                <button class="black-key" data-note="Fs4">F#</button>
+                <button class="white-key" data-note="G4">G</button>
+                <button class="black-key" data-note="Gs4">G#</button>
+                <button class="white-key" data-note="A4">A</button>
+                <button class="black-key" data-note="As4">A#</button>
+                <button class="white-key" data-note="H4">H</button>
+                <button class="white-key" data-note="C5">C</button>
+            </div>
+            <p id="piano-info">Válassz egy hangot!</p>
+        </div>
+
+        <div class="info-box">
+            <h3>💡 Tudtad?</h3>
+            <p>A hagyományos teljes méretű zongorának 88 billentyűje van.</p>
+        </div>
+    </section>
+
+    <!-- ZENEELMÉLET -->
+    <section class="page" id="theory">
+        <h2 class="section-title">🎼 Zeneelmélet</h2>
+
+        <div class="cards">
+            <div class="info-box">
+                <h3>🎵 Ritmus</h3>
+                <p>A hangok időbeli elrendezése.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>⏱️ Tempó</h3>
+                <p>A zene sebessége, amelyet BPM-ben mérünk.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>🔊 Dinamika</h3>
+                <p>A zene hangerősségének változása.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>🎶 Harmónia</h3>
+                <p>A különböző hangok és akkordok kapcsolata.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>🥁 Ütemmutató</h3>
+                <p>Megmutatja, hogyan rendeződnek az ütések az ütemekben.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>🎼 Hangköz</h3>
+                <p>Két hang magassága közötti távolság.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KVÍZ -->
+    <section class="page" id="quiz">
+        <h2 class="section-title">🏆 Zenei tudáspróba</h2>
+        <p class="subtitle">Válaszolj a kérdésekre!</p>
+
+        <div class="content-panel quiz-panel">
+            <div id="quiz-content">
+                <span id="quiz-progress">1 / 5 kérdés</span>
+                <h2 id="question"></h2>
+                <div id="answers" class="answers"></div>
+                <p id="quiz-result"></p>
+                <button id="next-question" class="primary-btn hidden">
+                    Következő →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÉRDEKESSÉGEK -->
+    <section class="page" id="extras">
+        <h2 class="section-title">✨ Zenei érdekességek</h2>
+
+        <div class="cards">
+            <div class="info-box">
+                <h3>🎹 88 billentyű</h3>
+                <p>Egy hagyományos teljes méretű zongorán 88 billentyű található.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>🎵 12 hang</h3>
+                <p>A kromatikus hangsor egy oktávban 12 különböző hangmagasságot tartalmaz.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>🎸 Hangszerek</h3>
+                <p>A gitár húros, a dob ütőhangszer, a zongora billentyűs hangszer.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>🚀 Tanulási tipp</h3>
+                <p>A rendszeres, rövid gyakorlás sokat segíthet a fejlődésben.</p>
+            </div>
+        </div>
+
+        <div class="content-panel">
+            <h2>🎯 Tanulási útvonal</h2>
+            <p>1. Kezdő: hangok és ritmusok.</p>
+            <p>2. Alapszint: akkordok és skálák.</p>
+            <p>3. Középhaladó: akkordmenetek.</p>
+            <p>4. Haladó: improvizáció és harmóniák.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 VP MUSIC | Minden jog fenntartva.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

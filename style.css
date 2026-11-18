@@ -1,0 +1,454 @@
+/* ==============================
+   VP MUSIC - MODERN NEON DESIGN
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #050914;
+    --panel: #101a2c;
+    --blue: #00c8ff;
+    --blue2: #168bff;
+    --purple: #8b5cf6;
+    --text: #f3f7ff;
+    --muted: #a9b8d0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:
+        radial-gradient(circle at 80% 10%, #09264b 0%, transparent 35%),
+        radial-gradient(circle at 10% 50%, #151033 0%, transparent 35%),
+        var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+/* FEJLÉC */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 18px 5%;
+    background: rgba(5, 10, 22, 0.92);
+    border-bottom: 1px solid rgba(0, 200, 255, 0.4);
+    box-shadow: 0 0 25px rgba(0, 140, 255, 0.12);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+}
+
+/* LOGÓ */
+
+.brand {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo,
+.logo-text {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.logo span,
+.logo-text span {
+    color: var(--blue);
+    text-shadow: 0 0 15px var(--blue);
+}
+
+.brand::before {
+    content: "♫";
+    font-size: 38px;
+    color: var(--blue);
+    text-shadow: 0 0 18px var(--blue);
+}
+
+/* MENÜ */
+
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-btn {
+    border: 1px solid transparent;
+    padding: 11px 17px;
+    border-radius: 30px;
+    color: #dce8fa;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+    color: white;
+    background: linear-gradient(135deg, #007bff, #00c8ff);
+    box-shadow: 0 0 18px rgba(0, 170, 255, 0.5);
+}
+
+/* OLDALAK */
+
+main {
+    width: min(1200px, 92%);
+    margin: auto;
+    padding: 40px 0;
+}
+
+.page {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FŐOLDALI HERO */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 75px 45px;
+    border-radius: 28px;
+    background:
+        radial-gradient(circle at 80% 40%, rgba(0, 145, 255, 0.3), transparent 40%),
+        linear-gradient(135deg, #101b35, #07101e 60%, #17102d);
+    border: 1px solid rgba(0, 195, 255, 0.35);
+    box-shadow: 0 0 35px rgba(0, 120, 255, 0.12);
+    margin-bottom: 40px;
+}
+
+.hero::after {
+    content: "♫  ♪  ♬  ♩";
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    font-size: clamp(35px, 7vw, 90px);
+    color: rgba(0, 195, 255, 0.12);
+    letter-spacing: 15px;
+    transform: rotate(-12deg);
+    pointer-events: none;
+}
+
+.tag {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 30px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    background: rgba(0, 195, 255, 0.08);
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 6vw, 65px);
+    margin-bottom: 18px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: var(--blue);
+    text-shadow: 0 0 22px rgba(0, 195, 255, 0.4);
+}
+
+.hero p {
+    color: var(--muted);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* GOMBOK */
+
+.primary-btn {
+    display: inline-block;
+    padding: 15px 28px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00bfff, #176bff);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 145, 255, 0.35);
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 0 30px rgba(0, 195, 255, 0.65);
+}
+
+/* CÍMEK */
+
+.section-title {
+    font-size: 30px;
+    margin: 30px 0 15px;
+}
+
+.subtitle {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+/* KÁRTYÁK */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #14243c, #0b1220);
+    border: 1px solid rgba(0, 195, 255, 0.25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: var(--blue);
+    box-shadow: 0 0 25px rgba(0, 160, 255, 0.18);
+}
+
+.card-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+/* TANANYAG ÉS INFORMÁCIÓ */
+
+.content-panel,
+.info-box {
+    padding: 25px;
+    margin: 22px 0;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #111e33, #0b1220);
+    border: 1px solid rgba(95, 130, 180, 0.25);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.content-panel h2,
+.info-box h2 {
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+.content-panel h3,
+.info-box h3 {
+    margin: 22px 0 10px;
+    color: #d9eaff;
+}
+
+.content-panel p,
+.info-box p {
+    color: #c1cee2;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.content-panel ul {
+    padding-left: 25px;
+    color: #c1cee2;
+    line-height: 2;
+}
+
+/* ZONGORA */
+
+.piano {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 25px;
+    background: #05080f;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.white-key {
+    width: 58px;
+    height: 190px;
+    background: linear-gradient(#ffffff, #dce4ef);
+    border: 1px solid #8995a8;
+    border-radius: 0 0 8px 8px;
+    color: #111827;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 12px;
+    transition: 0.15s;
+}
+
+.white-key:hover {
+    background: #bcefff;
+    box-shadow: 0 0 15px var(--blue);
+}
+
+.black-key {
+    width: 38px;
+    height: 120px;
+    margin-left: -19px;
+    margin-right: -19px;
+    z-index: 2;
+    background: linear-gradient(#303747, #080b12);
+    border: 1px solid #05070c;
+    border-radius: 0 0 6px 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.black-key:hover {
+    background: #087dff;
+    box-shadow: 0 0 15px #008cff;
+}
+
+#piano-info {
+    text-align: center;
+    color: var(--blue);
+    margin-top: 20px;
+}
+
+/* QUIZ */
+
+.quiz-panel {
+    text-align: center;
+}
+
+.answers {
+    display: grid;
+    gap: 12px;
+    margin: 25px auto;
+    max-width: 600px;
+}
+
+.answers button {
+    padding: 15px;
+    border: 1px solid #2c4669;
+    border-radius: 12px;
+    background: #14243a;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.answers button:hover {
+    background: #087bdb;
+}
+
+#quiz-progress {
+    color: var(--blue);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    color: #8294ad;
+    background: #070c16;
+    border-top: 1px solid rgba(0, 195, 255, 0.2);
+}
+
+/* REJTETT ELEMEK */
+
+.hidden {
+    display: none !important;
+}
+
+/* MOBIL */
+
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        position: relative;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-btn {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    main {
+        width: 94%;
+        padding: 20px 0;
+    }
+
+    .hero {
+        padding: 40px 22px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .white-key {
+        width: 38px;
+        height: 140px;
+    }
+
+    .black-key {
+        width: 27px;
+        height: 90px;
+        margin-left: -14px;
+        margin-right: -14px;
+    }
+
+    .content-panel,
+    .info-box {
+        padding: 18px;
+    }
+}
